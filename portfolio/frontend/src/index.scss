@@ -1,0 +1,184 @@
+@import "theme.scss";
+
+/* PALETTE */
+$primary: #9c0207ff;
+$secondary: #e0b92eff;
+$success: #54e39eff;
+$info: #7e7f76ff;
+$info-50: #7e7f7688;
+$warning: #084787ff;
+$danger: #610f42ff;
+$light: #fff2ebff;
+$light-80: #fff2ebcc;
+$dark: #090901ff;
+
+/* SIZING */
+$sizer: 1rem;
+$sizer-12: $sizer * .125;
+$sizer-25: $sizer * .25;
+$sizer-50: $sizer * .5;
+$sizer-130: $sizer * 1.3;
+$sizer-150: $sizer * 1.5;
+$sizer-300: $sizer * 3;
+$sizer-600: $sizer * 6;
+
+/* BASE */
+html, body, #root, #root>div {
+  height: 100%
+}
+#main {
+  height: 86%;
+}
+body {
+  background-color: $dark;
+  color: $light-80;
+  font-family: 'TT Fors Trial', sans-serif;
+}
+.list-group, .list-group-item {
+  color: $light;
+  background-color: $info-50;
+}
+
+/* TYPOGRAPHY */
+a {
+  color: $secondary;
+}
+a:hover {
+  color: $success;
+}
+.erik-work {
+  color: $secondary;
+}
+.page-title {
+  font-family: 'Garfist', sans-serif;
+  color: $secondary;
+}
+.sub-title {
+  font-family: 'PloniMLv2AAA-U-Bold', sans-serif;
+  color: $light;
+}
+.special {
+  font-family: "PloniMLv2AAA-Light", sans-serif;
+  position: relative;
+  color: $secondary;
+  top: $sizer-12;
+  font-size: 130%;
+  line-height: 0;
+}
+.navbar-brand:focus, .navbar-brand:hover {
+    color: #5a0205;
+}
+
+
+/* LEFT-SIDE NAV */
+#side-nav-section {
+  position: relative;
+}
+#side-nav-content {
+  position: fixed;
+  bottom: $sizer-150;
+  font-family: 'PloniMLv2AAA-Light', sans-serif;
+  text-transform: uppercase;
+  font-size: $sizer-130;
+}
+.nav-link {
+  color: $light;
+  padding-bottom: $sizer-12;
+  padding-left: $sizer-25;
+  padding-right: $sizer-25;
+  padding-top: $sizer-12;
+  margin-top: $sizer-25;
+  margin-bottom: $sizer-25;
+}
+.nav-link:hover, .nav-link:focus {
+  color: $secondary;
+}
+.nav-link:focus-visible {
+  color: $secondary;
+  outline: none;
+}
+.nav-link.active {
+  font-family: 'PloniMLv2AAA-U-Bold', sans-serif;
+  color: $secondary;
+}
+.navbar-brand {
+  color: $primary;
+}
+.navbar-nav .nav-link.active {
+  color: $secondary;
+}
+
+/* PROJECTS NAV */
+#projects-content {
+  text-transform: uppercase;
+}
+@media screen and (min-width: 992px) {
+  #projects-content {
+    position: fixed;
+    right: 16px;
+  }
+  .text-right-large {
+    text-align: right;
+  }
+}
+
+
+@media screen and (max-width: 991px) {
+  .sub-nav { display: none; }
+  #top-nav-container { border-bottom: 10px solid rgba(0,0,0,0) !important; }
+  #main-nav {
+        position: absolute;
+        top: 44px;
+        left: 4px;
+    }
+}
+
+/* TOP NAV */
+#top-nav-container {
+  background: $dark;
+  border-bottom: 10px solid $primary;
+  z-index: 1000;
+}
+@media screen and (min-width: 992px) {
+  #top-nav-container {
+    background-color: $dark;
+    position: fixed;
+    width: 100%;
+  }
+}
+
+/* HOMEPAGE */
+#home-brand {
+  color: $light;
+  letter-spacing: 1px;
+  font-family: 'HandTIMES', sans-serif;
+  font-style: italic;
+  font-size: $sizer-600;
+  margin: 0;
+  padding: 0;
+}
+.home-big-text {
+  font-family: 'Garfist', sans-serif;
+  color: $light;
+  font-size: $sizer-600;
+  margin: 0;
+  padding: 0;
+}
+@media screen and (min-width: 992px) {
+  #main {
+    position: relative;
+    top: 120px;
+  }
+
+  #main-middle {
+    border-left: 10px solid $primary;
+    border-right: 10px solid $primary;
+  }
+}
+
+/* VO PAGE */
+#portrait-vo {
+    max-width: 325px;
+    margin-right: $sizer-150;
+    margin-bottom: $sizer-150;
+}
