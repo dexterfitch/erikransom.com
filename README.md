@@ -1,6 +1,6 @@
 # erikransom.com
 
-**erikransom.com** is a dynamic and responsive web application serving as the personal portfolio for Erik J. Ransom, an accomplished voice actor and writer. :contentReference[oaicite:0]{index=0} The application empowers Erik to showcase his work and manage content effortlessly through an intuitive admin interface.
+**erikransom.com** is a dynamic and responsive web application serving as the personal portfolio for Erik J. Ransom, an accomplished voice actor and writer. The application empowers Erik to showcase his work and manage content effortlessly through an intuitive admin interface.
 
 ## Features
 
